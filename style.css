@@ -1,0 +1,247 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+font-family: Arial, sans-serif; 
+background: #f5f0e8; 
+color: #2c2c2c; 
+}
+
+.header { 
+background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); 
+padding: 50px 20px; 
+text-align: center; 
+border-bottom: 3px solid #c9a84c; 
+}
+
+.header h1 { 
+font-size: 2.5em; 
+color: #c9a84c; 
+letter-spacing: 4px; 
+text-transform: uppercase; 
+}
+.header p { 
+color: #aaa; 
+margin-top: 8px; 
+font-size: 0.95em; 
+letter-spacing: 2px; 
+}
+
+.container { 
+max-width: 1100px; 
+margin: 40px auto; 
+padding: 0 20px; 
+}
+
+.club { 
+background: linear-gradient(145deg, #1e1e2e, #16213e); 
+border: 1px solid #2a2a4a; border-left: 5px solid #c9a84c; 
+padding: 30px; 
+margin-bottom: 40px; 
+border-radius: 12px; 
+box-shadow: 0 8px 32px rgba(0,0,0,0.4); 
+}
+
+.club h2 { 
+font-size: 1.6em; 
+color: #c9a84c; 
+margin-bottom: 10px; 
+text-transform: uppercase; 
+letter-spacing: 2px; 
+}
+
+/* COULEURS OFFICIELLES PAR CLUB */
+
+/* PSG - bleu marine et rouge */
+.club-psg { border-left-color: #004170; }
+.club-psg h2 { color: #004170; }
+.club-psg th { background: #004170; color: #e30613; }
+
+/* FC Barcelona - bleu et rouge */
+.club-barca { border-left-color: #a50044; }
+.club-barca h2 { color: #a50044; }
+.club-barca th { background: #004d98; color: #ffffff; }
+
+/* Real Madrid - blanc et or */
+.club-real { border-left-color: #00529f; }
+.club-real h2 { color: #00529f; }
+.club-real th { background: #00529f; color: #febe10; }
+
+/* Arsenal - rouge et or */
+.club-arsenal { border-left-color: #ef0107; }
+.club-arsenal h2 { color: #ef0107; }
+.club-arsenal th { background: #ef0107; color: #ffffff; }
+
+/* Bayern Munich - rouge et blanc */
+.club-bayern { border-left-color: #dc052d; }
+.club-bayern h2 { color: #dc052d; }
+.club-bayern th { background: #dc052d; color: #ffffff; }
+
+/* Manchester City - bleu ciel */
+.club-city { border-left-color: #6cabdd; }
+.club-city h2 { color: #1c6eb0; }
+.club-city th { background: #6cabdd; color: #ffffff; }
+
+/* Liverpool - rouge */
+.club-liverpool { border-left-color: #c8102e; }
+.club-liverpool h2 { color: #c8102e; }
+.club-liverpool th { background: #c8102e; color: #f6eb61; }
+
+/* Chelsea - bleu roi */
+.club-chelsea { border-left-color: #034694; }
+.club-chelsea h2 { color: #034694; }
+.club-chelsea th { background: #034694; color: #ffffff; }
+
+/* Bodo/Glimt - jaune et noir */
+.club-bodo { border-left-color: #f5d000; }
+.club-bodo h2 { color: #c4a800; }
+.club-bodo th { background: #1a1a1a; color: #f5d000; }
+
+/* Monaco - rouge et blanc */
+.club-monaco { border-left-color: #e4002b; }
+.club-monaco h2 { color: #e4002b; }
+.club-monaco th { background: #e4002b; color: #ffffff; }
+
+/* Tottenham - blanc et bleu marine */
+.club-tottenham { border-left-color: #132257; }
+.club-tottenham h2 { color: #ffffff; }
+.club-tottenham th { background: #132257; color: #c0c0ff; }
+
+/* Sporting CP - vert et blanc */
+.club-sporting { border-left-color: #007a33; }
+.club-sporting h2 { color: #007a33; }
+.club-sporting th { background: #007a33; color: #ffffff; }
+
+/* Atalanta - bleu et noir */
+.club-atalanta { border-left-color: #1e3a8a; }
+.club-atalanta h2 { color: #1e3a8a; }
+.club-atalanta th { background: #1e3a8a; color: #000000; }
+
+/* Galatasaray - rouge et jaune */
+.club-galatasaray { border-left-color: #e30a17; }
+.club-galatasaray h2 { color: #e30a17; }
+.club-galatasaray th { background: #e30a17; color: #f5c400; }
+
+/* Newcastle - noir et blanc */
+.club-newcastle { border-left-color: #241f20; }
+.club-newcastle h2 { color: #f0f0f0; }
+.club-newcastle th { background: #3a3a3a; color: #ffffff; }
+
+/* Bayer Leverkusen - rouge et noir */
+.club-leverkusen { border-left-color: #e32221; }
+.club-leverkusen h2 { color: #e32221; }
+.club-leverkusen th { background: #e32221; color: #000000; }
+
+/* Juventus - noir et blanc */
+.club-juventus { border-left-color: #000000; }
+.club-juventus h2 { color: #1a1a1a; }
+.club-juventus th { background: #1a1a1a; color: #ffffff; }
+
+/* Benfica - rouge et or */
+.club-benfica { border-left-color: #cc0000; }
+.club-benfica h2 { color: #cc0000; }
+.club-benfica th { background: #cc0000; color: #f5c400; }
+
+/* Inter Milan - bleu et noir */
+.club-inter { border-left-color: #010E80; }
+.club-inter h2 { color: #010E80; }
+.club-inter th { background: #010E80; color: #000000; }
+
+/* Atletico Madrid - rouge et blanc */
+.club-atletico { border-left-color: #cb3524; }
+.club-atletico h2 { color: #cb3524; }
+.club-atletico th { background: #cb3524; color: #ffffff; }
+
+/* Qarabag - noir et rouge */
+.club-qarabag { border-left-color: #1a1a1a; }
+.club-qarabag h2 { color: #f0f0f0; }
+.club-qarabag th { background: #1a1a1a; color: #cc0000; }
+
+/* Borussia Dortmund - jaune et noir */
+.club-dortmund { border-left-color: #fde100; }
+.club-dortmund h2 { color: #c4a800; }
+.club-dortmund th { background: #fde100; color: #000000; }
+
+/* Club Bruges - bleu et noir */
+.club-bruges { border-left-color: #003d8f; }
+.club-bruges h2 { color: #003d8f; }
+.club-bruges th { background: #003d8f; color: #000000; }
+
+/* Olympiakos - rouge et blanc */
+.club-olympiakos { border-left-color: #cc0000; }
+.club-olympiakos h2 { color: #cc0000; }
+.club-olympiakos th { background: #cc0000; color: #ffffff; }
+
+.info { 
+display: flex; 
+gap: 20px; 
+margin-bottom: 20px; 
+flex-wrap: wrap; 
+}
+
+.info-badge { 
+background: #0f3460; 
+color: #c9a84c; 
+padding: 5px 14px; 
+border-radius: 20px; 
+font-size: 0.85em; 
+font-weight: bold; 
+}
+
+.entraineur { 
+background: #12122a; 
+border-radius: 8px; 
+padding: 12px 18px; 
+margin-bottom: 20px; 
+display: inline-block; 
+font-size: 0.95em; 
+color: #bbb; 
+}
+
+.entraineur span { 
+color: #c9a84c; 
+font-weight: bold; 
+}
+
+h3 { 
+color: #ffffff; 
+font-size: 1em; 
+text-transform: uppercase; 
+letter-spacing: 2px; 
+margin-bottom: 12px; 
+padding-bottom: 6px; 
+border-bottom: 1px solid #2a2a4a; 
+}
+
+table { 
+width: 100%; 
+border-collapse: collapse; 
+font-size: 0.9em; 
+}
+
+th { 
+background: #0f3460; 
+color: #c9a84c; 
+padding: 10px 12px; 
+text-align: left; 
+text-transform: uppercase; 
+font-size: 0.8em; 
+letter-spacing: 1px; 
+}
+
+td { 
+padding: 9px 12px; 
+border-bottom: 1px solid #1e1e3a; 
+color: #ccc; 
+}
+
+tr:nth-child(even) td { background: #12122a; }
+tr:hover td { background: #1a1a3a; color: #fff; }
+
+.footer { 
+text-align: center; 
+padding: 30px; 
+color: #444; 
+font-size: 0.85em; 
+border-top: 1px solid #1e1e3a; 
+margin-top: 40px; 
+}
