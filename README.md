@@ -2,7 +2,7 @@
 Web page presenting the 24 clubs qualified for the knockouts of the 25/26 UCL 
 # ⚽ Champions League 2025-2026 — Clubs & Effectifs
 
-Page web interactive présentant les clubs et effectifs participants à la UEFA Champions League 2024-2025.
+Page web interactive présentant les clubs et effectifs participants à la UEFA Champions League 2025-2026.
 
 ## Description
 
